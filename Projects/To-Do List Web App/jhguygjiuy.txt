@@ -1,0 +1,118 @@
+AAT - 1: Case Study on Amazon Transcribe
+
+Introduction
+
+Amazon Transcribe is an AWS cloud service that automatically converts speech into text. It enables users to transcribe both live and pre-recorded audio or video files with high accuracy. The service is widely used for generating subtitles, analyzing call center conversations, and making spoken content searchable.
+
+How Amazon Transcribe Works
+
+Amazon Transcribe works by processing audio or video input and converting it into text output using machine learning. Below is a simplified workflow of how it functions:
+
+Input Source: Audio or video file is provided as input (real-time streaming or pre-recorded file).
+
+Pre-processing: The file is converted into a format suitable for transcription.
+
+Speech Recognition: AWS applies machine learning models to convert speech to text.
+
+Post-processing: Optional features like speaker identification and content removal are applied.
+
+Output Generation: The final text output is available for download and analysis.
+
+Diagram Representation:
+
+   Audio/Video File  --->  AWS Transcribe  --->  Text Output
+
+Software** & Hardware Requirements**
+
+Software Requirements:
+
+AWS Account
+
+Web Browser (Gwaree Chrome, Firefox, or Edge)
+
+Amazon S3 (for storing audio/video files)
+
+Stable Internet Connection
+
+Hardware Requirements:
+
+Computer/Laptop with a microphone (for real-time transcription)
+
+Audio/Video file (for batch transcription)
+
+AWS-supported region access
+
+Methodology
+
+The process of using Amazon Transcribe involves two methods:
+
+Real-Time Transcription (Converting spoken words instantly to text)
+
+Batch Transcription (Uploading an audio/video file to get text output)
+
+Step-by-Step Guide to Using Amazon Transcribe
+
+1. Real-Time Transcription
+
+Open Amazon Transcribe Console.
+
+Click on “Real-time Transcription”.
+
+Select the language (e.g., English, Hindi, etc.).
+
+Click on “Start Streaming” and begin speaking.
+
+The service transcribes speech into text in real-time.
+
+Click on “Stop Streaming” to stop transcription.
+
+2. Batch Transcription (Using S3 Storage)
+
+Navigate to Amazon Transcribe Console → Click on “Transcription Jobs”.
+
+Click on “Create Job” and enter the job name (e.g., Demo_for_Assignment).
+
+Store the audio/video file in Amazon S3:
+
+Go to Amazon S3 and create a new bucket.
+
+Name the bucket uniquely and create it.
+
+Click on the created bucket and upload an audio/video file.
+
+Once uploaded, click on the file to get the S3 URL and copy it.
+
+Go back to Amazon Transcribe and paste the S3 URL in the required field.
+
+Click Next, then go to Additional Settings (Optional Features):
+
+Content Removal: Removes sensitive content like PII (Personally Identifiable Information) from the transcript.
+
+Speaker Identification: Detects and labels different speakers.
+
+Click “Create Job” to start the transcription process.
+
+Once completed, click on the Job Name to view the transcribed text.
+
+The transcription file can be downloaded for further use.
+
+Use Cases of Amazon Transcribe
+
+Amazon Transcribe is useful in multiple domains, including:
+
+Customer Service Call Analysis - Call centers use transcriptions to analyze customer interactions.
+
+Media & Entertainment - Used for captioning and subtitles for videos and podcasts.
+
+Healthcare - Helps in medical documentation and patient records.
+
+Education - Assists in lecture transcriptions and accessibility for hearing-impaired students.
+
+Legal & Compliance - Converts court recordings and legal conversations into text for documentation.
+
+Meetings & Interviews - Used for transcribing virtual meetings and job interviews.
+
+Conclusion
+
+Amazon Transcribe is a powerful tool that makes speech-to-text conversion simple and accurate. It supports multiple languages, integrates with other AWS services, and can be used for both real-time and pre-recorded transcription. The ability to filter sensitive content and detect speakers makes it a valuable tool for businesses, media companies, and researchers.
+

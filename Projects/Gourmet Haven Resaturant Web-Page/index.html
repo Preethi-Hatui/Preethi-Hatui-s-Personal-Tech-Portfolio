@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gourmet Haven - Fine Dining Experience in Bengaluru near BMSIT&M College">
+    <title>Gourmet Haven - Fine Dining Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="#" class="logo" aria-label="Gourmet Haven Home">
+                    <i class="fas fa-utensils logo-icon"></i>
+                    <span class="logo-text">Gourmet<span>Haven</span></span>
+                </a>
+            </div>
+            <nav class="navbar" id="navbar" role="navigation" aria-label="Main menu">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#chefs">Chefs</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+                <a href="#reservation" class="reservation-btn">Reservations</a>
+            </nav>
+            <div class="icons">
+                <button id="menu-btn" class="fas fa-bars" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbar"></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="home" id="home">
+        <div class="slide-container">
+            <div class="slide active">
+                <div class="image">
+                    <img src="hero-bg.jpg" alt="Restaurant Interior">
+                </div>
+                <div class="content">
+                    <h3>Exquisite Culinary Experience</h3>
+                    <h1>Discover The Taste Of Perfection</h1>
+                    <p>Our chefs create masterpieces that delight both the eyes and the palate with authentic Indian flavors.</p>
+                    <div class="buttons">
+                        <a href="#menu" class="btn">Explore Menu</a>
+                        <a href="#reservation" class="btn btn-outline">Book Table</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="image">
+                    <img src="dish1.jpg" alt="Seasonal Dish">
+                </div>
+                <div class="content">
+                    <h3>Seasonal Specialties</h3>
+                    <h1>Fresh Ingredients, Bold Flavors</h1>
+                    <p>We source only the finest seasonal ingredients for our innovative dishes.</p>
+                    <div class="buttons">
+                        <a href="#menu" class="btn">View Specials</a>
+                        <a href="#reservation" class="btn btn-outline">Book Table</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="image">
+                    <img src="dish2.jpg" alt="Wine Pairing">
+                </div>
+                <div class="content">
+                    <h3>Wine Pairing</h3>
+                    <h1>Perfect Harmony Of Food & Wine</h1>
+                    <p>Our sommelier will guide you through our extensive wine collection.</p>
+                    <div class="buttons">
+                        <a href="#menu" class="btn">Wine List</a>
+                        <a href="#reservation" class="btn btn-outline">Book Table</a>
+                    </div>
+                </div>
+            </div>
+            <button id="next-slide" class="fas fa-angle-right" aria-label="Next Slide"></button>
+            <button id="prev-slide" class="fas fa-angle-left" aria-label="Previous Slide"></button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="image">
+                <img src="about.jpg" alt="About Our Restaurant" class="glassmorphic">
+            </div>
+            <div class="content">
+                <h3 class="subheading">Our Story</h3>
+                <h1 class="heading">Welcome To Gourmet Haven</h1>
+                <p>Founded in 2010 near BMSIT&M College, Gourmet Haven has been serving exceptional cuisine in Bengaluru's vibrant food scene. Our passion for culinary excellence drives us to create unforgettable dining experiences.</p>
+                <p>We blend traditional Indian cooking techniques with modern presentation, using locally-sourced ingredients from Karnataka's rich farmlands.</p>
+                <div class="icons-container">
+                    <div class="icons glassmorphic">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Quality Food</h3>
+                    </div>
+                    <div class="icons glassmorphic">
+                        <i class="fas fa-wine-glass-alt"></i>
+                        <h3>Fine Drinks</h3>
+                    </div>
+                    <div class="icons glassmorphic">
+                        <i class="fas fa-headset"></i>
+                        <h3>Expert Service</h3>
+                    </div>
+                </div>
+                <a href="#" class="btn">Our Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="heading">
+                <h3 class="subheading">Our Selection</h3>
+                <h1 class="title">Exquisite Menu</h1>
+                <p class="description">Experience the finest culinary creations from our master chefs</p>
+            </div>
+            <div class="box-container">
+                <div class="box glassmorphic">
+                    <img src="dishh1.jpg" alt="Starter Dish">
+                    <div class="content">
+                        <h3>Starters</h3>
+                        <p>Begin your culinary journey with our carefully crafted appetizers.</p>
+                        <div class="menu-items">
+                            <div class="item">
+                                <h4>Spicy Tandoori Platter</h4>
+                                <span>₹320</span>
+                            </div>
+                            <div class="item">
+                                <h4>Masala Papad</h4>
+                                <span>₹180</span>
+                            </div>
+                            <div class="item">
+                                <h4>Paneer Tikka</h4>
+                                <span>₹280</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                </div>
+                <div class="box glassmorphic">
+                    <img src="dishh2.jpg" alt="Main Course">
+                    <div class="content">
+                        <h3>Main Courses</h3>
+                        <p>Our signature dishes prepared with passion and precision.</p>
+                        <div class="menu-items">
+                            <div class="item">
+                                <h4>Royal North Indian Thali</h4>
+                                <span>₹450</span>
+                            </div>
+                            <div class="item">
+                                <h4>Hyderabadi Biryani</h4>
+                                <span>₹380</span>
+                            </div>
+                            <div class="item">
+                                <h4>Butter Chicken</h4>
+                                <span>₹350</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                </div>
+                <div class="box glassmorphic">
+                    <img src="dishh3.jpg" alt="Dessert">
+                    <div class="content">
+                        <h3>Desserts</h3>
+                        <p>Sweet endings to complete your dining experience.</p>
+                        <div class="menu-items">
+                            <div class="item">
+                                <h4>Triple Chocolate Dream Cake</h4>
+                                <span>₹220</span>
+                            </div>
+                            <div class="item">
+                                <h4>Mango Kulfi</h4>
+                                <span>₹180</span>
+                            </div>
+                            <div class="item">
+                                <h4>Gulab Jamun</h4>
+                                <span>₹150</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chefs Section -->
+    <section class="chefs" id="chefs">
+        <div class="container">
+            <div class="heading">
+                <h3 class="subheading">Meet Our Team</h3>
+                <h1 class="title">Master Chefs</h1>
+                <p class="description">The culinary artists behind your memorable dining experience</p>
+            </div>
+            <div class="box-container">
+                <div class="box glassmorphic">
+                    <img src="chef1.jpg" alt="Vihaan Malhotra">
+                    <div class="content">
+                        <h3>Chef Vihaan Malhotra</h3>
+                        <p>Executive Chef</p>
+                        <p class="bio">With 15 years of experience in Indian and Continental cuisine, Chef Vihaan brings innovation to traditional flavors.</p>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                            <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                            <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box glassmorphic">
+                    <img src="chef2.jpg" alt="Chef Myra Desai">
+                    <div class="content">
+                        <h3>Chef Myra Desai</h3>
+                        <p>Pastry Chef</p>
+                        <p class="bio">Specializing in Indian sweets and French pastries, Chef Myra creates desserts that are visual and flavorful masterpieces.</p>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                            <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                            <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box glassmorphic">
+                    <img src="chef3.jpg" alt="Chef Aarav Kapoor">
+                    <div class="content">
+                        <h3>Chef Aarav Kapoor</h3>
+                        <p>Sous Chef</p>
+                        <p class="bio">Expert in South Indian cuisine, Chef Aarav brings authentic flavors from Kerala and Tamil Nadu to our menu.</p>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                            <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                            <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="heading">
+                <h3 class="subheading">Customer Voices</h3>
+                <h1 class="title">What People Say</h1>
+                <p class="description">Hear from our valued customers about their experiences</p>
+            </div>
+            <div class="box-container">
+                <div class="box glassmorphic">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The Hyderabadi Biryani here took me back to my childhood in Hyderabad. Absolutely authentic flavors and perfect texture."</p>
+                    <div class="user">
+                        <img src="customer1.jpg" alt="Customer Yuvraj Nair">
+                        <div class="info">
+                            <h3>Yuvraj Nair</h3>
+                            <span>Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box glassmorphic">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"As a food blogger from Bengaluru, I've tried many restaurants. Gourmet Haven stands out for its consistent quality and innovative menu."</p>
+                    <div class="user">
+                        <img src="customer2.jpg" alt="Customer Myra Reddy">
+                        <div class="info">
+                            <h3>Myra Reddy</h3>
+                            <span>Food Blogger</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box glassmorphic">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Perfect place for our anniversary dinner. The ambiance, service, and especially the Butter Chicken were exceptional!"</p>
+                    <div class="user">
+                        <img src="customer3.jpg" alt="Customer Karan Mehta">
+                        <div class="info">
+                            <h3>Karan Mehta</h3>
+                            <span>First-time Visitor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="heading">
+                <h3 class="subheading">Visual Feast</h3>
+                <h1 class="title">Food Gallery</h1>
+                <p class="description">A glimpse of our culinary creations</p>
+            </div>
+            <div class="gallery-container">
+                <div class="box glassmorphic">
+                    <img src="gallery1.jpg" alt="Gallery Image 1">
+                    <div class="icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="box glassmorphic">
+                    <img src="gallery2.jpg" alt="Gallery Image 2">
+                    <div class="icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="box glassmorphic">
+                    <img src="gallery3.jpg" alt="Gallery Image 3">
+                    <div class="icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="box glassmorphic">
+                    <img src="gallery4.jpg" alt="Gallery Image 4">
+                    <div class="icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="box glassmorphic">
+                    <img src="gallery5.jpg" alt="Gallery Image 5">
+                    <div class="icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="box glassmorphic">
+                    <img src="gallery6.jpg" alt="Gallery Image 6">
+                    <div class="icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="heading">
+                <h3 class="subheading">Get In Touch</h3>
+                <h1 class="title">Contact Us</h1>
+                <p class="description">We'd love to hear from you</p>
+            </div>
+            <div class="row">
+                <div class="contact-info glassmorphic">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Near BMSIT&M College, Bengaluru, Karnataka 560064</p>
+                    <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                    <p><i class="fas fa-envelope"></i> info@gourmethaven.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sun: 11:00 AM - 11:00 PM</p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.269132576035!2d77.5628603148226!3d13.03164799082277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17f5f5c5e6e9%3A0x1b9a3b5b5b5b5b5b!2sBMSIT%26M!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" title="Restaurant Location"></iframe>
+                    </div>
+                </div>
+                <form action="" class="contact-form glassmorphic">
+                    <h3>Send Us a Message</h3>
+                    <input type="text" placeholder="Your Name" class="box" required>
+                    <input type="email" placeholder="Your Email" class="box" required>
+                    <input type="tel" placeholder="Your Number" class="box" required>
+                    <textarea placeholder="Your Message" class="box" cols="30" rows="10" required></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="box-container">
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="#home"><i class="fas fa-arrow-right"></i> Home</a>
+                    <a href="#about"><i class="fas fa-arrow-right"></i> About</a>
+                    <a href="#menu"><i class="fas fa-arrow-right"></i> Menu</a>
+                    <a href="#chefs"><i class="fas fa-arrow-right"></i> Chefs</a>
+                    <a href="#testimonials"><i class="fas fa-arrow-right"></i> Testimonials</a>
+                    <a href="#gallery"><i class="fas fa-arrow-right"></i> Gallery</a>
+                    <a href="#contact"><i class="fas fa-arrow-right"></i> Contact</a>
+                </div>
+                <div class="box">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                    <p>Saturday: 11:00 AM - 11:00 PM</p>
+                    <p>Sunday: 11:00 AM - 9:00 PM</p>
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                        <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                        <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
+                        <a href="#" class="fab fa-linkedin-in" aria-label="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for latest updates and special offers</p>
+                    <form action="">
+                        <input type="email" placeholder="Your Email" class="email" required>
+                        <input type="submit" value="Subscribe" class="btn">
+                    </form>
+                </div>
+            </div>
+            <div class="credit">Created by <span>Gourmet Haven Team</span> | © <span id="current-year"></span> All Rights Reserved</div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image view">
+        <span class="close-btn" aria-label="Close lightbox">&times;</span>
+        <img src="" alt="Lightbox Image" class="lightbox-img">
+    </div>
+
+    <!-- Reservation Modal -->
+    <div class="reservation-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Reservation form">
+        <div class="modal-overlay"></div>
+        <div class="modal-content glassmorphic">
+            <span class="close-modal" aria-label="Close modal">&times;</span>
+            <h2>Make a Reservation</h2>
+            <form class="reservation-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" placeholder="Date" required>
+                </div>
+                <div class="form-group">
+                    <input type="time" placeholder="Time" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Number of Guests</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5+">5+ People</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Special Requests (Optional)"></textarea>
+                </div>
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

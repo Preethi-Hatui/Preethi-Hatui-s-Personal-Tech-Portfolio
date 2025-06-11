@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopVerse Dashboard</title>
+   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ 
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <div class="logo">
+        <i class="fas fa-store"></i>
+        <span class="logo-text">ShopVerse</span>
+      </div>
+      <ul class="nav-links">
+        <li class="active"><a href="#"><i class="fas fa-chart-line"></i><span>Dashboard</span></a></li>
+        <li><a href="#"><i class="fas fa-bag-shopping"></i><span>Orders</span></a></li>
+        <li><a href="#"><i class="fas fa-users"></i><span>Customers</span></a></li>
+        <li><a href="#"><i class="fas fa-user-tie"></i><span>Vendors</span></a></li>
+        <li><a href="#"><i class="fas fa-box-open"></i><span>Products</span></a></li>
+        <li><a href="#"><i class="fas fa-money-bill-trend-up"></i><span>Revenue</span></a></li>
+        <li><a href="#"><i class="fas fa-gear"></i><span>Settings</span></a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-header">
+        <div class="header-left">
+          <button class="menu-btn" id="menu-btn" aria-label="Toggle sidebar">
+            <i class="fas fa-bars"></i>
+          </button>
+          <h1>Dashboard</h1>
+        </div>
+        <div class="header-right">
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search..." aria-label="Search">
+          </div>
+          <a href="#" class="profile">
+            <img src="admin-profile.jpg" alt="Profile picture of Preethi Hatui" class="profile-img">
+            <div class="profile-info">
+              <p class="admin-name">Preethi Hatui</p>
+              <small>Super Admin</small>
+            </div>
+          </a>
+        </div>
+      </header>
+
+      <section class="content-wrapper">
+        <section class="cards">
+          <div class="card">
+            <i class="fas fa-bag-shopping"></i>
+            <h3>132</h3>
+            <p>Orders</p>
+            <div class="card-hover-effect"></div>
+          </div>
+          <div class="card">
+            <i class="fas fa-users"></i>
+            <h3>154</h3>
+            <p>Customers</p>
+            <div class="card-hover-effect"></div>
+          </div>
+          <div class="card">
+            <i class="fas fa-user-tie"></i>
+            <h3>42</h3>
+            <p>Vendors</p>
+            <div class="card-hover-effect"></div>
+          </div>
+          <div class="card">
+            <i class="fas fa-box-open"></i>
+            <h3>1,230</h3>
+            <p>Products</p>
+            <div class="card-hover-effect"></div>
+          </div>
+          <div class="card highlight">
+            <i class="fas fa-sack-dollar"></i>
+            <h3>₹18.4k</h3>
+            <p>Revenue</p>
+            <div class="card-hover-effect"></div>
+            <div class="highlight-glow"></div>
+          </div>
+        </section>
+
+        <section class="data-panels">
+          <div class="panel recent-listings">
+            <div class="panel-header">
+              <h2>Recent Listings</h2>
+              <a href="#" class="see-all">See All <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Seller</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>iPhone 14</td>
+                    <td>MobileMart</td>
+                    <td><span class="dot yellow"></span> Pending Review</td>
+                  </tr>
+                  <tr>
+                    <td>Running Shoes</td>
+                    <td>Sportify</td>
+                    <td><span class="dot green"></span> Live</td>
+                  </tr>
+                  <tr>
+                    <td>Smartwatch</td>
+                    <td>GizmoStore</td>
+                    <td><span class="dot red"></span> Out of Stock</td>
+                  </tr>
+                  <tr>
+                    <td>Leather Jacket</td>
+                    <td>FashionFi</td>
+                    <td><span class="dot blue"></span> Delivered</td>
+                  </tr>
+                  <tr>
+                    <td>Bluetooth Speaker</td>
+                    <td>SoundScape</td>
+                    <td><span class="dot green"></span> Live</td>
+                  </tr>
+					<tr>
+					  <td>Fitness Tracker</td>
+					  <td>HealthGear</td>
+					  <td><span class="dot green"></span> Live</td>
+					</tr>
+					<tr>
+					  <td>Coffee Maker</td>
+					  <td>BrewPro</td>
+					  <td><span class="dot blue"></span> Delivered</td>
+					</tr>
+					<tr>
+					  <td>Tripod Stand</td>
+					  <td>PhotoFlex</td>
+					  <td><span class="dot red"></span> Out of Stock</td>
+					</tr>
+					<tr>
+					  <td>Wireless Earphones</td>
+					  <td>SoundMax</td>
+					  <td><span class="dot green"></span> Live</td>
+					</tr>
+					<tr>
+					  <td>Backpack</td>
+					  <td>UrbanPack</td>
+					  <td><span class="dot blue"></span> Delivered</td>
+					</tr>
+					<tr>
+					  <td>Portable Fan</td>
+					  <td>CoolAir</td>
+					  <td><span class="dot red"></span> Out of Stock</td>
+					</tr>
+					<tr>
+					  <td>LED Strip Lights</td>
+					  <td>GlowTech</td>
+					  <td><span class="dot green"></span> Live</td>
+					</tr>
+					<tr>
+					  <td>Sports Water Bottle</td>
+					  <td>HydroFlow</td>
+					  <td><span class="dot blue"></span> Delivered</td>
+					</tr>
+					<tr>
+					  <td>Foldable Table</td>
+					  <td>SpaceSaver</td>
+					  <td><span class="dot red"></span> Out of Stock</td>
+					</tr>
+					<tr>
+					  <td>Electric Toothbrush</td>
+					  <td>SmilePro</td>
+					  <td><span class="dot green"></span> Live</td>
+					</tr>
+
+				  
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel new-customers">
+            <div class="panel-header">
+              <h2>New Customers</h2>
+              <a href="#" class="see-all">See All <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="customers-list">
+              <a href="#" class="customer">
+                <img src="user.jpg" alt="Divya Sharma" class="customer-img">
+                <div class="info">
+                  <p>Divya Sharma</p>
+                  <small>Buyer</small>
+                </div>
+                <div class="actions">
+                  
+				  <button type="button" aria-label="Email"><i class="fas fa-envelope"></i></button>
+
+                  <button aria-label="Call"><i class="fas fa-phone"></i></button>
+                  <button aria-label="Message"><i class="fas fa-comment"></i></button>
+                </div>
+                <div class="customer-hover-effect"></div>
+              </a>
+              <a href="#" class="customer">
+                <img src="user.jpg" alt="Rahul Kumar" class="customer-img">
+                <div class="info">
+                  <p>Rahul Kumar</p>
+                  <small>Buyer</small>
+                </div>
+                <div class="actions">
+                  <button aria-label="Email"><i class="fas fa-envelope"></i></button>
+                  <button aria-label="Call"><i class="fas fa-phone"></i></button>
+                  <button aria-label="Message"><i class="fas fa-comment"></i></button>
+                </div>
+                <div class="customer-hover-effect"></div>
+              </a>
+              <a href="#" class="customer">
+                <img src="user.jpg" alt="Sunita Patel" class="customer-img">
+                <div class="info">
+                  <p>Sunita Patel</p>
+                  <small>Buyer</small>
+                </div>
+                <div class="actions">
+                  <button aria-label="Email"><i class="fas fa-envelope"></i></button>
+                  <button aria-label="Call"><i class="fas fa-phone"></i></button>
+                  <button aria-label="Message"><i class="fas fa-comment"></i></button>
+                </div>
+                <div class="customer-hover-effect"></div>
+              </a>
+			  <a href="#" class="customer">
+  <img src="user.jpg" alt="Amit Sharma" class="customer-img">
+  <div class="info">
+    <p>Amit Sharma</p>
+    <small>Buyer</small>
+  </div>
+  <div class="actions">
+    <button aria-label="Email"><i class="fas fa-envelope"></i></button>
+    <button aria-label="Call"><i class="fas fa-phone"></i></button>
+    <button aria-label="Message"><i class="fas fa-comment"></i></button>
+  </div>
+  <div class="customer-hover-effect"></div>
+</a>
+
+<a href="#" class="customer">
+  <img src="user.jpg" alt="Neha Verma" class="customer-img">
+  <div class="info">
+    <p>Neha Verma</p>
+    <small>Seller</small>
+  </div>
+  <div class="actions">
+    <button aria-label="Email"><i class="fas fa-envelope"></i></button>
+    <button aria-label="Call"><i class="fas fa-phone"></i></button>
+    <button aria-label="Message"><i class="fas fa-comment"></i></button>
+  </div>
+  <div class="customer-hover-effect"></div>
+</a>
+
+<a href="#" class="customer">
+  <img src="user.jpg" alt="Ravi Desai" class="customer-img">
+  <div class="info">
+    <p>Ravi Desai</p>
+    <small>Vendor</small>
+  </div>
+  <div class="actions">
+    <button aria-label="Email"><i class="fas fa-envelope"></i></button>
+    <button aria-label="Call"><i class="fas fa-phone"></i></button>
+    <button aria-label="Message"><i class="fas fa-comment"></i></button>
+  </div>
+  <div class="customer-hover-effect"></div>
+</a>
+
+<a href="#" class="customer">
+  <img src="user.jpg" alt="Priya Sen" class="customer-img">
+  <div class="info">
+    <p>Priya Sen</p>
+    <small>Buyer</small>
+  </div>
+  <div class="actions">
+    <button aria-label="Email"><i class="fas fa-envelope"></i></button>
+    <button aria-label="Call"><i class="fas fa-phone"></i></button>
+    <button aria-label="Message"><i class="fas fa-comment"></i></button>
+  </div>
+  <div class="customer-hover-effect"></div>
+</a>
+
+<a href="#" class="customer">
+  <img src="user.jpg" alt="Manish Kapoor" class="customer-img">
+  <div class="info">
+    <p>Manish Kapoor</p>
+    <small>Seller</small>
+  </div>
+  <div class="actions">
+    <button aria-label="Email"><i class="fas fa-envelope"></i></button>
+    <button aria-label="Call"><i class="fas fa-phone"></i></button>
+    <button aria-label="Message"><i class="fas fa-comment"></i></button>
+  </div>
+  <div class="customer-hover-effect"></div>
+</a>
+
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ShopVerse. All rights reserved.</p>
+  </footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.getElementById('menu-btn');
+  const sidebar = document.getElementById('sidebar');
+  const mainContent = document.querySelector('.main-content');
+  const body = document.body;
+  
+  // Toggle sidebar with smooth animation
+  function toggleSidebar() {
+    sidebar.classList.toggle('collapsed');
+    mainContent.classList.toggle('sidebar-collapsed');
+    body.classList.toggle('sidebar-open');
+    
+    // Store state in localStorage
+    const isCollapsed = sidebar.classList.contains('collapsed');
+    localStorage.setItem('sidebarCollapsed', isCollapsed);
+  }
+  
+  // Close sidebar when clicking outside on mobile
+  function handleOutsideClick(e) {
+    if (window.innerWidth <= 1024 && 
+        !sidebar.contains(e.target) && 
+        e.target !== menuBtn && 
+        !menuBtn.contains(e.target)) {
+      sidebar.classList.remove('collapsed');
+      mainContent.classList.remove('sidebar-collapsed');
+      body.classList.remove('sidebar-open');
+    }
+  }
+  
+  // Adjust layout on resize
+  function handleResize() {
+    if (window.innerWidth > 1024) {
+      sidebar.classList.remove('collapsed');
+      mainContent.classList.remove('sidebar-collapsed');
+      body.classList.remove('sidebar-open');
+    }
+  }
+  
+  // Initialize sidebar state from localStorage
+  function initSidebarState() {
+    const isCollapsed = localStorage.getItem('sidebarCollapsed') === 'true';
+    if (isCollapsed && window.innerWidth > 1024) {
+      sidebar.classList.add('collapsed');
+      mainContent.classList.add('sidebar-collapsed');
+    }
+  }
+  
+  // Optimized resize handler with debounce
+  let resizeTimeout;
+  function optimizedResizeHandler() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      handleResize();
+    }, 100);
+  }
+  
+  // Event listeners
+  menuBtn.addEventListener('click', toggleSidebar);
+  document.addEventListener('click', handleOutsideClick);
+  window.addEventListener('resize', optimizedResizeHandler);
+  
+  // Initialize
+  initSidebarState();
+  handleResize();
+  
+  // Add animation class after load to prevent initial animation
+  setTimeout(() => {
+    body.classList.add('loaded');
+  }, 100);
+});</script>
+</body>
+</html>

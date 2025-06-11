@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart To‑Do List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🧠 Smart To‑Do List</h1>
+    <button id="toggleThemeBtn" class="theme-btn">🌓 Theme</button>
+  </header>
+
+  <div class="container">
+    <!-- Left Panel: Add Task Form -->
+    <div class="left-panel">
+      <h2>Add Task</h2>
+      <form id="addTaskForm">
+        <input type="text" id="taskInput" placeholder="Task description" required />
+        <div class="datetime-group">
+          <input type="date" id="dueDate" />
+          <select id="priority">
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+            <option value="Low">Low</option>
+          </select>
+        </div>
+        <button type="submit">➕ Add Task</button>
+      </form>
+    </div>
+
+    <!-- Right Panel: Task List -->
+    <div class="right-panel">
+      <h2>Active Tasks</h2>
+      <div class="controls">
+        <input type="text" id="searchInput" placeholder="🔍 Search tasks..." />
+        <select id="sortTasks">
+          <option value="date">📅 Sort by Date</option>
+          <option value="priority">⚡ Priority</option>
+          <option value="name">🔤 Name</option>
+        </select>
+      </div>
+      <ul id="taskList"></ul>
+      <button class="clear-btn" id="clearTasksBtn">🧹 Clear All</button>
+      <button class="toggle-btn" id="toggleHistoryBtn">📜 Show Task History</button>
+
+      <!-- Task History Section -->
+      <div id="historySection" class="hidden">
+        <h2>Completed Tasks</h2>
+        <ul id="historyList"></ul>
+        <button class="clear-btn" id="clearHistoryBtn">🧹 Clear History</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

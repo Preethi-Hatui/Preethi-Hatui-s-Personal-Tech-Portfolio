@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <input type="text" id="display" class="display" disabled>
+
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="clear">C</button>
+            <button onclick="backspace()">←</button>
+            <button onclick="insert('%')">%</button>
+            <button onclick="insert('/')">÷</button>
+
+            <button onclick="insert('7')">7</button>
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')">9</button>
+            <button onclick="insert('*')">×</button>
+
+            <button onclick="insert('4')">4</button>
+            <button onclick="insert('5')">5</button>
+            <button onclick="insert('6')">6</button>
+            <button onclick="insert('-')">−</button>
+
+            <button onclick="insert('1')">1</button>
+            <button onclick="insert('2')">2</button>
+            <button onclick="insert('3')">3</button>
+            <button onclick="insert('+')">+</button>
+
+            <button onclick="insert('0')">0</button>
+            <button onclick="insert('.')">.</button>
+            <button onclick="calculate()" class="equal">=</button>
+            
+            <button onclick="toggleScientific()" class="toggle">Scientific Mode</button>
+            <button onclick="toggleHistory()" class="toggle">History</button>
+        </div>
+
+        <!-- Scientific Buttons -->
+        <div class="scientific-buttons hidden">
+            <button onclick="power()">xʸ</button>
+            <button onclick="square()">x²</button>
+            <button onclick="cube()">x³</button>
+            <button onclick="exp()">e^x</button>
+            <button onclick="log()">log</button>
+            <button onclick="ln()">ln</button>
+            <button onclick="sqrt()">√</button>
+            <button onclick="factorial()">n!</button>
+            <button onclick="insert('(')">(</button>
+            <button onclick="insert(')')">)</button>
+            <button onclick="insert('Math.PI')">π</button>
+            <button onclick="insert('Math.E')">e</button>
+            <button onclick="sin()">sin</button>
+            <button onclick="cos()">cos</button>
+            <button onclick="tan()">tan</button>
+        </div>
+
+        <!-- History Panel -->
+        <div id="history-panel" class="hidden">
+            <div id="history"></div>
+            <button onclick="clearHistory()">Clear History</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

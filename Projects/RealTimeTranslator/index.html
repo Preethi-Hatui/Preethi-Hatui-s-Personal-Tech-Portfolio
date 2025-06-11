@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real-time Language Translator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="background">
+  <div class="bubbles"></div>
+  <div class="alphabets"></div>
+</div>
+
+<div class="bubbles">
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+  <div class="glass-container">
+    <h1 class="title">Transcendence Real-Time Translator</h1>
+
+    <!-- Input Text Area -->
+    <textarea id="inputText" placeholder="Type or speak something..." rows="5" aria-label="Input text"></textarea>
+
+    <!-- Language Selection -->
+    <div class="controls">
+      <div class="control-group">
+        <label for="sourceLang">From:</label>
+        <select id="sourceLang" aria-label="Source language"></select>
+      </div>
+
+      <div class="control-group">
+        <label for="targetLang">To:</label>
+        <select id="targetLang" aria-label="Target language"></select>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="buttons">
+      <button id="translateBtn" type="button">Translate</button>
+      <button id="speakBtn" type="button">Speak</button>
+      <button id="listenBtn" type="button">Listen</button>
+    </div>
+
+    <!-- Translated Output -->
+    <div class="output-section">
+      <h2>Translated Text</h2>
+      <div id="outputText" class="output-box" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
