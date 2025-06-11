@@ -15,12 +15,16 @@ This portfolio showcases my skills through an immersive interactive experience. 
 ## 🛠️ Technologies
 **Frontend:**  
 HTML5, CSS3, JavaScript  
+
 **Libraries/Frameworks:**  
 Font Awesome, Google Fonts (Inter, Playfair Display, Roboto Mono)  
+
 **Design:**  
 Glassmorphism, Neumorphism, ParticleJS effects  
+
 **External Links:**  
 [Font Awesome](https://fontawesome.com/) | [Google Fonts](https://fonts.google.com/)  
+
 
 ## 📸 Screenshots
 
