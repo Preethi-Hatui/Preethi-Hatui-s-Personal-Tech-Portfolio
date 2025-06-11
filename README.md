@@ -37,11 +37,11 @@ Glassmorphism, Neumorphism, ParticleJS effects
 
 
 ## </> Key Technical Aspects:
--CSS custom properties for theming
--Intersection Observer for scroll animations
--Advanced CSS animations (@keyframes)
--Mobile-first responsive approach
--Accessibility-focused markup
+- CSS custom properties for theming
+- Intersection Observer for scroll animations
+- Advanced CSS animations (@keyframes)
+- Mobile-first responsive approach
+- Accessibility-focused markup
 
 ## 🔄 Future Updates
 - Add more projects to tablet
